@@ -1,0 +1,17 @@
+
+# Useful R function
+
+## 1. Convert DOI to R Package Citation
+
+``` r
+doi2rpkgcita = \(doi){
+  return(rcrossref::cr_cn(dois = doi, format = "bibentry"))
+}
+```
+
+## 2. Print html to PDF
+
+``` r
+pagedown::chrome_print('./xxxxx.html',
+                       './xxxxx.pdf')
+```

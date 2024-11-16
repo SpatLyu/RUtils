@@ -15,3 +15,15 @@ doi2rpkgcita = \(doi){
 pagedown::chrome_print('./xxxxx.html',
                        './xxxxx.pdf')
 ```
+
+## 3. Convert Slides PDF to PNG
+
+``` r
+pdftools::pdf_convert(
+  "./xxxxx.pdf",
+  format = "png",
+  pages = NULL,
+  filenames = sprintf("./xxxxx/fig_%02d.png", 1:??),
+  dpi = 300
+)
+```
